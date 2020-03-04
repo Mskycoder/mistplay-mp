@@ -1,10 +1,10 @@
 const express = require('express');
-const mysql = require('mysql');
+// const mysql = require('mysql');
 const fs = require('fs');
 const FlexSearch = require("flexsearch");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 8080;
 
 
 // TODO: MySQL DB
